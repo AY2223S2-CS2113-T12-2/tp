@@ -10,14 +10,13 @@ import seedu.bigpp.menu.PCViewerMenu;
 import seedu.bigpp.menu.TutorialMenu;
 
 public abstract class UI {
-
+    
+    public static Stack<UIState> visitedMenusStack = new Stack<UIState>();
+    public static final String LOGO = "add logo here";
     private static final String DIVIDER = "===================================================";
     private static final Scanner in = new Scanner(System.in);
     private static final PrintStream out = System.out;
-
-    public static final String LOGO = "add logo here";
     private static UIState uiState = UIState.MAIN_MENU;
-    public static Stack<UIState> visitedMenusStack = new Stack<UIState>();
 
     public static void initializeVisitedMenusStack() {
         visitedMenusStack.push(UIState.MAIN_MENU);
