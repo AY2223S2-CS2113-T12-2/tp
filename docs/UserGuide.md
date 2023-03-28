@@ -18,6 +18,10 @@ PC Part Picker is a command line application for planning your own PC builds.
 #### `delete PC_INDEX`
 **Functionality:** Deletes the PC with index `PC_INDEX`
 
+#### `custom COMPONENT_TYPE SPEC_1,SPEC_2, ...`
+**Functionality:** Adds a custom component of type COMPONENT_TYPE with the specs SPEC_1, SPEC_2, ... to the
+component list for that component type
+
 #### `bye`
 **Functionality:** Exits the application
 
